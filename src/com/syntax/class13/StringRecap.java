@@ -36,6 +36,16 @@ public class StringRecap {
 		System.out.println("The value of str1 =" + str1);
 		System.out.println("The value of str2 =" + str2);
 		
+		//another way
+		String s1="Hello";
+		String s2="Bye";
+		
+		String shorterstr1= s1+s2;
+		s2=shorterstr1.replace(s1, "");
+		s1=shorterstr1.replace(s2, "");
+		
+		System.out.println("Value of s1 = "+ s1);
+		System.out.println("Value of s2 = "+ s2);
 	}
 
 }
