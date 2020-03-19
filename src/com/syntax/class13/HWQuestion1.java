@@ -1,6 +1,6 @@
 package com.syntax.class13;
 
-public class StringRecap {
+public class HWQuestion1 {
 
 	public static void main(String[] args) {
 		// HOMEWORK
