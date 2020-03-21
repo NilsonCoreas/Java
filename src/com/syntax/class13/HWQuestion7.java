@@ -1,0 +1,40 @@
+package com.syntax.class13;
+
+import java.util.Arrays;
+
+public class HWQuestion7 {
+
+	public static void main(String[] args) {
+		// Write a java program to find the second largest number in the array? Maximum and minimum number in the array?
+		int[] numbers= {32, 61, 16, 89, 74, 25};
+		
+		//1st way
+		Arrays.sort(numbers);
+		System.out.println("smallest "+ numbers[0]); //16
+		System.out.println("Biggest " + numbers[numbers.length-1]); //to print the last element, 89
+		
+		
+		//2nd way
+		int[] numbers2= {32,61,16,89,74,25};
+		
+		int smallest=numbers2[0];
+		int largest=numbers2[0];
+		int largest2=numbers2[0];
+		for(int i=0; i<numbers2.length; i++) {
+			int element =numbers2[i];
+			if(numbers2[i] > largest) {
+				largest2=largest;
+				largest=element;
+			}else if (element>largest2){
+				largest2=element;
+			}
+			if (element < smallest) {
+				smallest = element;
+			}
+		}
+		System.out.println("smallest "+ numbers[0]); //16
+		System.out.println("Biggest " + numbers[numbers.length-1]); //89
+		System.out.println("Second largest "+largest2);
+	}
+
+}
