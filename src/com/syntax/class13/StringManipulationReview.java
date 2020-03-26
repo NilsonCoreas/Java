@@ -26,7 +26,7 @@ public class StringManipulationReview {
 		System.out.println(fifthCharacter); //output is o since it is the 5th character in Hello
 		String reverse = "";
 		char[] charArray= str.toCharArray();
-		for (int i = charArray.length-1; i>=0; i--) {
+		for (int i = charArray.length; i<=0; i++) {
 			System.out.println(charArray[i]); //H e l l o  is printted vertical , can use int i=charArray.length-1; i>=0; i-- to make is reverse
 			reverse +=charArray[i];
 		}
