@@ -11,7 +11,7 @@ public class LoopReviewForLoop {
 				int evenSum=0;
 				int oddSum=0;
 			
-				for (int i=1;i<=50;i++) {
+				for (int i=1;i<=5;i++) {
 					if  (i%2==0) { 	//use mod % to do odd and even numbers
 						evenSum +=i;
 					}else {
